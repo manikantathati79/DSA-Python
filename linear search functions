@@ -1,0 +1,13 @@
+def my_function(s,search):
+    for i in range(len(s)):
+        if s[i]==search:
+            return i
+    else:
+        return -1
+s=[1,9,4,0,2]
+search=int(input("enter the search element:"))
+result=my_function(s,search)
+if result==-1:
+    print("element not found")
+else:
+    print("element found at",result)
