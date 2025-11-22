@@ -1,0 +1,9 @@
+s=[3,4,7,8,2,5]
+search=int(input("enter the search element:"))
+found=False
+for i in range(len(s)):
+    if s[i]==search:
+        found=True
+        print("element found at",i)
+if found==False:
+    print("element not found")
