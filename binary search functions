@@ -1,0 +1,19 @@
+def my_function(s,search):
+    low=0
+    high=len(s)-1
+    while low<=high:
+        mid=(low+high)//2
+        if s[mid]==search:
+            return mid
+        elif search>=s[mid]:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+s=[1,1,5,7,9]
+search=int(input("enter the search element:"))
+result=my_function(s,search)
+if result==-1:
+    print("element not found")
+else:
+    print("found at =",result)
