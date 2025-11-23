@@ -1,0 +1,11 @@
+s=[2,7,55,123,14,17]
+target=int(input("enter the target value:"))
+found=False
+for i in range(len(s)):
+    for j in range(i+1,len(s)):
+        if s[i]+s[j]==target:
+            found=True
+            print("found =",i,j)
+            break
+if found==False:
+    print("not found")
